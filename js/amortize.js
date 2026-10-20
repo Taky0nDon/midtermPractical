@@ -39,6 +39,7 @@ calcButton.addEventListener("click",
                                 const monthlyPaymentP = paragraphize("Monthly payment: $" + monthlyPayment);
                                 const termP = paragraphize("Mortgate term (years): " + termYears);
                                 const rateP = paragraphize("Interest rate: " + (interestRate * 100) + "%");
+                                const loanAmountP = paragraphize("Loan amount: $" + loanAmount.toFixed(2));
                                 const totalInterestP = paragraphize("Total interest due: $" + totalInterest.toFixed(2))
                                 const mortgageTotalP = paragraphize("Total mortgage cost: $" + mortgageTotal.toFixed(2));
                                 const monthlyPaymentsHeader = paragraphize("Monthly Payments: ");
@@ -46,6 +47,7 @@ calcButton.addEventListener("click",
                                 // Append paragraph elements to display div
                                 displayDiv.appendChild(termP);
                                 displayDiv.appendChild(rateP);
+                                displayDiv.appendChild(loanAmountP);
                                 displayDiv.appendChild(monthlyPaymentP);
                                 displayDiv.appendChild(totalInterestP);
                                 displayDiv.appendChild(mortgageTotalP);
